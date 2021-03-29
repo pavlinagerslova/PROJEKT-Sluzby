@@ -2,12 +2,6 @@ html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
 
-.main-img
-{
-    display: block;
-    margin: 0 auto;
-}
-
 .main
 {
     margin: 0 20px;
@@ -16,13 +10,21 @@ html { box-sizing: border-box; }
     align-items: center;
 }
 
-.main h1
+.main-text
 {
-    font: bold 28px "Montserrat", sans-serif;
-    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main h1::after
+.main-text h1
+{
+    font: 28px "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.main-text h1::after
 {
     content: "";
     margin: 10px auto 0px auto;
@@ -37,6 +39,13 @@ html { box-sizing: border-box; }
     font-weight: 300;
     color: #8B8B8B;
     text-align: center;
+}
+
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .adventure, .beach
@@ -70,14 +79,21 @@ html { box-sizing: border-box; }
 
 .services h3
 {
-    font: bold 16px "Montserrat", sans-serif;
+    font: 16px "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.tiles
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .tile
 {
     margin: 10px;
     padding: 20px;
-    width: 100%;
     display: flex;
     flex: 0 1 100%;
     justify-content: center;
@@ -97,3 +113,41 @@ html { box-sizing: border-box; }
     margin-right: 30px;
     width: 10%;
 }
+
+@media screen and (min-width: 640px)
+{
+    .buttons
+    {
+        flex-direction: row;
+    }
+     
+    .adventure, .beach
+    {
+        margin: 10px;
+    }
+
+    .tiles
+    {
+        flex-direction: row;
+    }
+
+    .tile
+    {
+        flex-direction: column;
+        align-items: center;
+        flex: 0 1 33%;
+    }
+
+    .tile p 
+    {
+        text-align: center;
+    }
+
+    .tile img
+    {
+        margin-right: 0px;
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1100px)
