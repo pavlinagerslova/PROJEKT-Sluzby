@@ -113,14 +113,16 @@ body
     padding: 20px;
     display: flex;
     flex: 0 1 100%;
-    justify-content: center;
-    border: 1px solid #407BFF1F;
+        border: 1px solid #407BFF1F;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #407BFF1F;
 }
 
-.tile p
+.tile-text
 {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
     color: #8B8B8B;
     font: 13px "Montserrat", sans-serif;
 }
@@ -128,7 +130,7 @@ body
 .tile img
 {
     margin-right: 30px;
-    width: 10%;
+    height: 40px;
 }
 
 @media screen and (min-width: 640px)
@@ -179,7 +181,6 @@ body
     .tile img
     {
         margin-right: 0px;
-        width: 33%;
     }
 }
 
