@@ -3,9 +3,16 @@ html { box-sizing: border-box; }
 
 body
 {
-    margin: 60px 20px;
     background-color: #FAFAFA;
+    font-family: "Montserrat", sans-serif;;
 }
+
+main
+{
+    margin: 60px 20px;
+}
+
+---
 
 .main
 {
@@ -35,7 +42,7 @@ body
 
 .main-text h1
 {
-    font: 28px "Montserrat", sans-serif;
+    font-size: 28px; 
     font-weight: 500;
 }
 
@@ -50,7 +57,7 @@ body
 
 .description
 {
-    font: 16px "Montserrat", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     color: #8B8B8B;
     text-align: center;
@@ -67,7 +74,7 @@ body
 {
     padding: 10px 30px;
     margin: 5px;
-    font: 14px "Montserrat", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     color: white;
@@ -96,7 +103,7 @@ body
 
 .services-info h3
 {
-    font: 16px "Montserrat", sans-serif;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -113,7 +120,7 @@ body
     padding: 20px;
     display: flex;
     flex: 0 1 100%;
-        border: 1px solid #407BFF1F;
+    border: 1px solid #407BFF1F;
     border-radius: 10px;
     box-shadow: 2px 2px 3px #407BFF1F;
 }
